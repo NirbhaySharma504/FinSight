@@ -36,7 +36,7 @@ st.set_page_config(page_title="FinSight AI - Equity Research", layout="wide")
 
 # Sidebar
 st.sidebar.title("FinSight AI")
-logo = Image.open(r"/Users/nirbhay/Desktop/img.jpeg")
+logo = Image.open(r"img.jpeg")
 st.sidebar.image(logo, use_column_width=True)
 st.sidebar.write("""
 Welcome to **FinSight AI**. Enter a stock symbol to generate a real-time AI-driven equity research report and queries section.
