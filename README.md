@@ -110,5 +110,5 @@ We would like to express our gratitude to the following:
 
 ## PowerPoint Presentation
 
-- [Link to PPT](https://1drv.ms/p/c/fc78c453f4580c22/ETsH6EgWr2NDgQaHxw2yow0BD_bjcdZbGC0ae6fmo30cLA?e=TFs7Oe)
+- [Link to PPT](https://1drv.ms/p/c/fc78c453f4580c22/EX3_EMQsvoNPjM7k5emxRYQBHB5SnQjwBhy-FlBIAuRTtQ?e=fTj3f7)
 
