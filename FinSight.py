@@ -259,7 +259,7 @@ if symbol_input:
     cash_flow = report["quarterlyReports"]
 
     encoder = SentenceTransformer("all-mpnet-base-v2")
-    os.environ['GROQ_API_KEY'] = "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"
+    os.environ['GROQ_API_KEY'] = "API_KEY"
     llm = ChatGroq(temperature=0.6, model="mixtral-8x7b-32768")
     # Convert income statements to strings
     statement = income_statement[:8]
