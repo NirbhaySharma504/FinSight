@@ -1,6 +1,9 @@
 # FinSight AI
 
 FinSight AI is an AI-powered equity research tool designed to provide users with insights and analytics on stocks using Langchain and Yahoo Finance API. This application integrates sentiment analysis and offers a user-friendly interface for stock market analysis.
+The site link is : [Finsight](https://finsight-2024.streamlit.app/)
+The tutorial link is : [Finsight_Tut](https://youtu.be/Cz4qGNCV9Ys?si=_oDi-BYlrOaff4Z4)
+
 
 ## Features
 
