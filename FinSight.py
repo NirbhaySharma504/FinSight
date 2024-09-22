@@ -21,13 +21,14 @@ from langchain_groq import ChatGroq
 import os
 from langchain.prompts import PromptTemplate
 # Set your Groq API key as an environment variable
-os.environ['GROQ_API_KEY'] = "API_KEY"
+groq_api = st.secrets["Groq_API"]
+os.environ['GROQ_API_KEY'] = groq_api
 
 # Initialize ChatGroq
 llm = ChatGroq(api_key=os.getenv('GROQ_API_KEY'), temperature=0.6)
 
 # Initialize EODHD API
-api_key_eodhd = 'API_KEY'  # Your EODHD API key
+api_key_eodhd = st.secrets["api_key_eodhd"]  # Your EODHD API key
 api = APIClient(api_key_eodhd)
 
 # Streamlit App Layout
@@ -232,7 +233,7 @@ symbol_input = st.text_input("Enter Stock Symbol", value="")
 if symbol_input:
     # Display Stock Summary
 
-    api_key = 'API_KEY'
+    api_key = st.secrets["API_KEY"]
 
     # Company symbol (e.g., 'IBM', 'AAPL')
     symbol = symbol_input
@@ -259,7 +260,7 @@ if symbol_input:
     cash_flow = report["quarterlyReports"]
 
     encoder = SentenceTransformer("all-mpnet-base-v2")
-    os.environ['GROQ_API_KEY'] = "API_KEY"
+    os.environ['GROQ_API_KEY'] = st.secrets["Groq_API"]
     llm = ChatGroq(temperature=0.6, model="mixtral-8x7b-32768")
     # Convert income statements to strings
     statement = income_statement[:8]
